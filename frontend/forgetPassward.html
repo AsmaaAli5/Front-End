@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+       <meta http-equiv="X-UA-Comptible" content="IE=edge">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <link rel="stylesheet" href="bootstrap.css">
+       <title>Clinic Time Management</title>
+       <style>
+           #nav1{
+              box-shadow:2px 2px 50px 2px rgb(197, 192, 192) ;
+           }
+           #t1{
+            position: fixed;
+               top:260px;
+               left: 350px;
+           }
+           #i1{
+               width:4rem ;
+               height:4rem ;
+               position: fixed;
+               top:100px;
+               left: 460px;
+           }
+           #l1{
+            position: fixed;
+               top:180px;
+               left: 410px;
+              font-size:25px;
+          }
+          hr{
+            position: fixed;
+               top:220px;
+               left: 350px;
+               width:300px;
+          }
+          #email{ 
+         text-align: center;
+         border-style:double;
+          width: 300px;
+          height:35px;
+          border-radius:5px;  
+       }
+       #phone{
+        text-align: center;
+         border-style:double;
+          width: 300px;
+          height:35px;
+          border-radius:5px;  
+       }
+       #btn{
+          width: 300px;
+          height: 40px;
+          border-radius:5px;
+      }
+      #r{
+          padding-left: 30%;
+      }
+     
+       </style>
+
+       
+    </head>
+    <body>
+        <nav id="nav1"class="navbar navbar-expand-lg  navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">Clinic Time Management</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link mr-sm-5" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" style="width:250px;" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button class="btn mr-sm-2 btn-outline-warning" type="button">Login</button>
+                <button class="btn  btn-outline-warning" type="button">Sign up</button>
+              </form>
+              
+            </div>
+          </nav>
+
+          <div id="d1">
+            <img id="i1"src="img_398183.png"/>
+            <br><br><label id="l1">Reset Passward.</label><hr>
+            <table id="t1">
+               
+                <tr>
+                    <td>
+                    Confirm the email address and phone number<br>
+                     you provided in your security settings:
+                    </td>
+                </tr>
+                <tr>
+                   <td colspan="2"><input id="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="phone" placeholder="Phone number"></td>
+                </tr>
+                <tr>
+                            <td><br><button id="btn" class="btn btn-primary" onclick="reset();">Reset</button></td>
+                </tr>
+                </table>
+
+          </div>
+
+
+
+       
+       <script src="jquery-3.4.1.min.js"></script>
+       <script src="bootstrap.js"></script>
+    </body>
+</html>
